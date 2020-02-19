@@ -34,12 +34,12 @@ syntax off
 filetype plugin indent on
 set nocompatible
 filetype plugin on
-
-if has("win32")
-	let $MYVIMRC='C:/dotfiles/vimrc'
-else
-	let $MYVIMRC='~/dotfiles/vimrc'
-end
+" move his to _vimrc
+"if has("win32")
+"	let $MYVIMRC='C:/dotfiles/vimrc'
+"else
+"	let $MYVIMRC='~/dotfiles/vimrc'
+"end
 
 let g:clever_f_across_no_line = 1
 let g:clever_f_timeout_ms = 3000
