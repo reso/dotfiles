@@ -51,3 +51,10 @@ endif
 ```
 
 I'm using the Anderson colorscheme from here:  https://github.com/tlhr/anderson.vim   which I've forked and added the ```termguicolors```  https://github.com/reso/anderson.vim/commit/58287ea020c862d527bed922ba255ded4b7d2e16
+
+It looks like there is a little hack needed with tmux: https://github.com/vim/vim/issues/3608
+```
+" This is only necessary if you use "set termguicolors".
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+```
